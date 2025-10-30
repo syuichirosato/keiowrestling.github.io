@@ -45,7 +45,8 @@ header {
   background: url('../img/keio_wrestling_logo.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 120px 20px;
+  padding: 60px 20px 0 20px; /* 下余白をなくす */
+  margin-bottom: 0; /* heroの下マージンを削除 */
 }
 
 .hero h1 {
@@ -75,9 +76,9 @@ footer {
 /* ==============================
    集合写真デザイン
 ============================== */
-team-photo {
+.team-photo {
   text-align: center;
-  margin: 0 auto; /* ← 上下の余白をなくす */
+  margin: 0;
   padding: 0;
 }
 
