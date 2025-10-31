@@ -162,3 +162,21 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ==============================
+   集合写真（横幅調整バージョン）
+============================== */
+.team-photo {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+}
+
+.team-photo img {
+  display: inline-block;
+  width: 80%;         /* ← これで自然サイズに */
+  max-width: 1000px;  /* ← 横に広すぎないよう制限 */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
