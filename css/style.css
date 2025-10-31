@@ -57,7 +57,7 @@ header {
 ============================== */
 .hero {
   background: url('../img/keio_wrestling_logo.jpg') center/cover no-repeat;
-  color: white;
+  color: blue;
   text-align: center;
   padding: 60px 20px 0 20px; /* ← 下padding削除 */
   margin: 0; /* ← 下マージン削除 */
