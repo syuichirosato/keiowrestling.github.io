@@ -1,3 +1,6 @@
+/* ==============================
+   全体デザイン
+============================== */
 body {
   margin: 0;
   font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
@@ -5,6 +8,14 @@ body {
   color: #222;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============================
+   ヘッダー
+============================== */
 header {
   background-color: #003366;
   color: white;
@@ -13,7 +24,7 @@ header {
 }
 
 .header-logo img {
-  max-width: 400px;
+  max-width: 260px; /* ← ロゴ少し拡大 */
   height: auto;
 }
 
@@ -41,12 +52,15 @@ header {
   color: #ffcc00;
 }
 
+/* ==============================
+   Hero（タイトル）
+============================== */
 .hero {
   background: url('../img/keio_wrestling_logo.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 60px 20px 0 20px; /* 下余白をなくす */
-  margin-bottom: 0; /* heroの下マージンを削除 */
+  padding: 60px 20px 0 20px; /* ← 下padding削除 */
+  margin: 0; /* ← 下マージン削除 */
 }
 
 .hero h1 {
@@ -56,25 +70,11 @@ header {
 
 .hero p {
   font-size: 1.2em;
+  margin-bottom: 0;
 }
 
-.intro {
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-  line-height: 1.8;
-}
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9em;
-  margin-top: 80px;
-}
 /* ==============================
-   集合写真デザイン
+   集合写真
 ============================== */
 .team-photo {
   text-align: center;
@@ -84,8 +84,30 @@ footer {
 
 .team-photo img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 0; /* 丸みなしで自然に */
+  box-shadow: none; /* 影なしでスッキリ */
+}
+
+/* ==============================
+   Welcomeセクション
+============================== */
+.intro {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ==============================
+   フッター
+============================== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  margin-top: 80px;
 }
