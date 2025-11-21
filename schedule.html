@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>スケジュール | 慶應義塾體育會レスリング部</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/header_logo.ico">
+
+  <style>
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background-color: #fff;
+    color: #222;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+  }
+
+  header img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+  }
+
+  .header-nav ul li {
+    margin: 5px 15px;
+  }
+
+  .header-nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .top-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .topics h1 {
+    font-size: 1.8em;
+    color: #003366;
+    border-bottom: 3px solid #003366;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+  }
+
+  .topics p {
+    line-height: 1.8;
+    font-size: 1em;
+  }
+
+  .topics img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  }
+
+  /* ====== SNSボタン ====== */
+  .sns-botton {
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .sns-botton h3 {
+    color: #003366;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .sns-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .sns-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .sns-icon:hover {
+    transform: scale(1.1);
+    background-color: #d0d0d0;
+  }
+
+  .sns-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-nav ul li {
+      margin: 8px 0;
+    }
+    .sns-icons {
+      gap: 25px;
+    }
+    iframe {
+      height: 480px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img src="img/keio wresting 1.jpg" alt="ヘッダーロゴ"></a>
+      <div class="header-nav">
+        <ul>
+          <li><a href="about.html">部活紹介</a></li>
+          <li><a href="member.html">部員紹介</a></li>
+          <li><a href="schedule.html">スケジュール</a></li>
+          <li><a href="freshman.html">新歓情報</a></li>
+          <li><a href="access.html">連絡先とアクセス</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="top-content">
+      <div class="topics">
+        <h1>スケジュール</h1>
+       
+        <p>※以下のカレンダーが表示されない場合は、<br>PCブラウザからご覧ください。</p>
+
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=a2Vpb3dyZXN0bGluZ3NjaGVkdWxlQGdtYWlsLmNvbQ&amp;color=%23039BE5&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTz=0&amp;showTabs=0&amp;showCalendars=0" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <div class="sns-botton">
+        <h3>LINKS</h3>
+        <div class="sns-icons">
+          <a href="https://www.instagram.com/keio_wrestling/?hl=ja" target="_blank" class="sns-icon">
+            <img src="img/icon_insta.png" alt="Instagram">
+          </a>
+          <a href="http://www.uaa.keio.ac.jp/club/wrestling/index.html" target="_blank" class="sns-icon">
+            <img src="img/icon_keiohq.png" alt="Keio HQ">
+          </a>
+          <a href="https://www.japan-wrestling.jp/" target="_blank" class="sns-icon">
+            <img src="img/icon_jwa.png" alt="JWA">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      COPYRIGHT © 2025 KEIO WRESTLING CLUB
+    </footer>
+  </div>
+</body>
+</html>
