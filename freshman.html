@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>慶應義塾體育會レスリング部</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/header_logo.ico">
+
+  <style>
+  /* ===============================
+     全体レイアウト基本設定
+  =============================== */
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background-color: #fff;
+    color: #222;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+  }
+
+  header img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+  }
+
+  .header-nav ul li {
+    margin: 5px 15px;
+  }
+
+  .header-nav ul li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* ===============================
+     トップコンテンツ
+  =============================== */
+  .top-content {
+    padding: 20px;
+  }
+
+  .topics h1 {
+    font-size: 1.8em;
+    color: #003366;
+    border-bottom: 3px solid #003366;
+    padding-bottom: 8px;
+  }
+
+  .topics ul {
+    padding-left: 20px;
+  }
+
+  .topics ul li {
+    margin: 5px 0;
+  }
+
+  /* ===============================
+     新歓ページ用レイアウト
+  =============================== */
+  .introduce-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .shinkan-content {
+    margin-bottom: 60px;
+  }
+
+  .shinkan-content h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 40px;
+    color: #111;
+  }
+
+  .shinkan-content p {
+    line-height: 1.9;
+    margin: 15px 0;
+    font-size: 1em;
+  }
+
+  /* ===============================
+     画像が枠からはみ出さない設定
+  =============================== */
+  .shinkan-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    object-fit: cover;
+  }
+
+  /* ===============================
+     サブ見出し
+  =============================== */
+  .subhead h2 {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin-top: 50px;
+  }
+
+  /* ===============================
+     強調スタイル
+  =============================== */
+  .highlight {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  /* ===============================
+     フッター
+  =============================== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  /* ===============================
+     スマホ表示調整
+  =============================== */
+  @media screen and (max-width: 768px) {
+    .header-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-nav ul li {
+      margin: 8px 0;
+    }
+
+    .introduce-container {
+      padding: 10px;
+      max-width: 95%;
+    }
+
+    .shinkan-content h3 {
+      font-size: 1.2em;
+      line-height: 1.4;
+    }
+
+    .shinkan-content p {
+      font-size: 0.95em;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- ===== ヘッダー ===== -->
+    <header>
+      <a href="index.html"><img src="img/keio wresting 1.jpg" alt="ヘッダーロゴ"></a>
+      <div class="header-nav">
+        <ul>
+          <li><a href="about.html">部活紹介</a></li>
+          <li><a href="member4.html">部員紹介</a></li>
+          <li><a href="schedule.html">スケジュール</a></li>
+          <li><a href="freshman.html">新歓情報</a></li>
+          <li><a href="access.html">連絡先とアクセス</a></li>
+          <li><a href="sponsor.html">スポンサー募集</a></li>
+          <li><a href="mitakai.html">レスリング三田会</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ===== メイン ===== -->
+    <div class="top-content">
+      <div class="topics">
+        <h1>新歓情報</h1>
+
+        <div class="introduce-container">
+          <div class="shinkan-content">
+            <img src="http://keiowrestling.com/wordpress/wp-content/uploads/2025/10/IMG_3245-1.jpg" alt="新歓イメージ">
+            <p>こんにちは！<br><br>
+              数ある体育会の中から、私たち慶應義塾大学レスリング部に関心を持っていただき、ありがとうございます！
+            </p>
+
+            <p>
+              慶應義塾大学に進学が決まり、<br><br>
+              <span class="highlight">『大学で "何か" 新しいことに挑戦したい』</span><br><br>
+              <span class="highlight">『学生時代に、本気で打ち込める "何か" を見つけたい』</span><br><br>
+              このような思いを抱いている新入生の皆さんに向けて、<br>
+              <span class="bold">「慶應義塾大学レスリング部って、どんなチームなの？」</span><br>
+              <span class="bold">「レスリングってどんなスポーツなの？」</span><br>
+              についてお伝えします。
+            </p>
+
+            <h3>私たちは大学から<br>レスリングを始めた選手が主力のチーム</h3>
+
+            <p>
+              慶應義塾大学ではスポーツ推薦制度はなく、部員の7～8割が大学からレスリングを始めています。<br><br>
+              全日本クラスの特別コーチからの指導を受け、日々練習を重ね、2016年には「44年ぶりの一部リーグ昇格」、2025年にはリーグ戦1972年以来、53年ぶり13位を果たしました。<br>
+              <img src="img/eyecatch_img02.jpg" alt="">
+              <br>活動に携わってきた全員が、不可能を可能にする経験をしました。
+              <img src="img/S__118259760.jpg" alt="">
+            </p>
+
+            <h3>世界に挑む選手</h3>
+            <p>
+              2024年のパリオリンピックでは、環境情報学部の尾崎野乃香選手が銅メダルを獲得しました。
+              <img src="img/ozakioslo.jpg" alt="">
+            </p>
+
+            <h3>未経験者主体のチームで<br>全国レベルの強豪校に挑み続ける</h3>
+            <p>
+              他大学の推薦選手主体のチームに勝つのは簡単ではありません。<br><br>
+              しかし、本気で高い目標に挑むからこそ、自己とチームの限界を超え、成長の実感が得られます。<br><br>
+              <span class="highlight">『学生時代に、一生忘れられない経験をしたい』</span><br><br>
+              <span class="highlight">『新たなチャレンジを通して、自分を変えたい』</span><br><br>
+              そんな思いを持つ皆さん、<br>
+              <span class="bold">新しい慶應レスリング部の歴史を一緒に作りましょう！</span>
+            </p>
+          </div>
+
+          <div id="about-wrstl" class="subhead">
+            <h2>レスリングについて</h2>
+          </div>
+          <div class="shinkan-content">
+            <h3>レスリングとは 1対1で相手を制する格闘技</h3>
+            <p>
+              半径9mのマット上で相手をコントロールし、両肩を1秒マットにつける「フォール」を狙います。<br><br>
+              打撃・関節技はなく、アメリカでは約40万人が競技する人気スポーツです。
+            </p>
+          </div>
+
+          <div id="about-enroll" class="subhead">
+            <h2>入部までの流れ</h2>
+          </div>
+          <div class="shinkan-content">
+            <p>
+              ① 当部公式LINEへメッセージを送る（QRコード↓）<br>
+              <img src="http://keiowrestling.com/wordpress/wp-content/uploads/2023/03/IMG_6508.jpg" alt="公式LINE QR">
+              ↓<br>
+              ② 見学日程を決めて道場へ<br>
+              ③ 練習見学・体験<br>
+              ④ 入部手続き・新歓会招待<br>
+              <span class="highlight">⑤ 入部！</span>
+            </p>
+          </div>
+
+          <div id="about-q&a" class="subhead">
+            <h2>よくある質問</h2>
+          </div>
+          <div class="shinkan-content">
+            <p><strong>Q. 未経験でも始められますか？</strong><br>
+              A. 7〜8割が大学からレスリングを始めています。未経験者も安心して成長できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== フッター ===== -->
+    <footer>
+      COPYRIGHT © 2025 KEIO WRESTLING CLUB
+    </footer>
+  </div>
+</body>
+</html>
