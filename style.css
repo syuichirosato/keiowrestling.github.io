@@ -1,0 +1,338 @@
+/* ==============================
+   全体デザイン
+============================== */
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============================
+   ヘッダー
+============================== */
+header {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.header-logo img {
+  max-width: 260px; /* ← ロゴ少し拡大 */
+  height: auto;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 15px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-nav ul li {
+  margin: 5px 15px;
+}
+
+.header-nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header-nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* ==============================
+   Hero（タイトル）
+============================== */
+.hero {
+  background: url('../img/keio_wrestling_logo.jpg') center/cover no-repeat;
+  color: #003366;
+  text-align: center;
+  padding: 60px 20px 0 20px; /* ← 下padding削除 */
+  margin: 0; /* ← 下マージン削除 */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+/* ==============================
+   集合写真
+============================== */
+.team-photo {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* 丸みなしで自然に */
+  box-shadow: none; /* 影なしでスッキリ */
+}
+
+/* ==============================
+   Welcomeセクション
+============================== */
+.intro {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ==============================
+   フッター
+============================== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  margin-top: 80px;
+}
+/* ==============================
+   スポンサー募集エリア
+============================== */
+.sponsor-section {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.sponsor-section h2 {
+  color: #003366;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.sponsor-box {
+  background-color: #ffffff;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #003366;
+  transition: 0.3s;
+}
+
+.sponsor-box:hover {
+  background-color: #003366;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ==============================
+   集合写真（横幅調整バージョン）
+============================== */
+.team-photo {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+}
+
+.team-photo img {
+  display: inline-block;
+  width: 80%;         /* ← これで自然サイズに */
+  max-width: 1000px;  /* ← 横に広すぎないよう制限 */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+/* ===============================
+   全体共通
+=============================== */
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+}
+
+header img {
+  max-width: 250px;
+  height: auto;
+}
+
+/* ナビゲーション */
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.header-nav ul li {
+  margin: 5px 15px;
+}
+
+.header-nav ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===============================
+   メンバー紹介ページ
+=============================== */
+
+.top-content {
+  padding: 20px;
+}
+
+.top-content h1 {
+  font-size: 1.8em;
+  color: #003366;
+  border-bottom: 3px solid #003366;
+  padding-bottom: 8px;
+}
+
+/* 学年ナビ */
+.grade ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.grade ul li {
+  margin: 5px 12px;
+}
+
+.grade ul li a {
+  font-weight: bold;
+  color: #003366;
+  text-decoration: none;
+}
+
+.grade-title {
+  text-align: center;
+  margin-top: 30px;
+  color: #003366;
+  font-size: 1.6em;
+}
+
+/* メンバー紹介 */
+.member-introduce {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 900px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.member-photo {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.member-photo img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.member-profile {
+  flex: 2 1 400px;
+  padding: 10px 20px;
+}
+
+.member-profile h3 {
+  font-size: 1.4em;
+  margin-top: 0;
+}
+
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.profile-table th,
+.profile-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.profile-table th {
+  background-color: #f0f0f0;
+  width: 30%;
+}
+
+/* フッター */
+footer {
+  background-color: #003366;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  .header-nav ul {
+    flex-direction: column;
+  }
+  .member-introduce {
+    flex-direction: column;
+  }
+}
